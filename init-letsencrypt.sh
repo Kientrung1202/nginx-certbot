@@ -6,12 +6,12 @@ if ! [ -x "$(command -v docker-compose)" ]; then
 fi
 
 # put your multi domain here, separated by space. Don't forget make nginx multi domain conf
-domains=(your-domain1.com your-sub.domain2.org your-multi-sub.domain3.net)
+domains=(s3.shining.io.vn s3-admin.shining.io.vn)
 
 rsa_key_size=4096
 data_path="./data/certbot"
 
-email="" # Adding a valid address is strongly recommended, please add your own email !
+email="trungtp1202@gmail.com" # Adding a valid address is strongly recommended, please add your own email !
 staging=0 # Set to 1 if you're testing your setup to avoid hitting request limits, set 0 for production env.
 
 echo "List of domains(s) :"
