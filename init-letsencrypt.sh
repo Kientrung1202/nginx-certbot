@@ -6,7 +6,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
 fi
 
 # put your multi domain here, separated by space. Don't forget make nginx multi domain conf
-domains=(s3.shining.io.vn s3-admin.shining.io.vn)
+domains=(backend.shining.io.vn app.shining.io.vn s3-admin.shining.io.vn s3.shining.io.vn)
 
 rsa_key_size=4096
 data_path="./data/certbot"
